@@ -6489,3 +6489,35 @@ h6 {
   letter-spacing: 1px;
   color: #fff;
 }
+
+/* Kapex footer layout refinements */
+.footer .footer_top .footer_brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer .footer_top .footer_info_row {
+  justify-content: flex-end;
+}
+
+.footer .footer_top .footer_widget .connect_links li {
+  line-height: 30px;
+}
+
+.footer .footer_top .footer_widget .connect_links li a {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer .footer_top .footer_widget .connect_links li a i {
+  width: 16px;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .footer .footer_top .footer_info_row {
+    justify-content: flex-start;
+  }
+}
