@@ -6489,36 +6489,3 @@ h6 {
   letter-spacing: 1px;
   color: #fff;
 }
-
-
-.footer_logo_box {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    gap: 12px;
-}
-
-.footer_logo {
-    width: 60px;
-    height: auto;
-}
-
-.footer_company_name {
-    color: #ffffff;
-    font-weight: 600;
-    line-height: 1.2;
-    text-align: left;
-}
-
-.footer_company_name .kapex {
-    font-size: 22px;
-    display: block;
-}
-
-.footer_company_name .infra {
-    font-size: 18px;
-    letter-spacing: 2px;
-}
-
-
-
