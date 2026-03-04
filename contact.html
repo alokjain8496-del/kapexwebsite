@@ -246,6 +246,13 @@
                                 <button type="submit" class="button button-contactForm boxed-btn">Send</button>
                             </div>
                         </form>
+
+                            <!-- ================ from submission message start================= -->
+                        <div id="form-success" style="display:none; margin-top:20px; padding:15px; background:#d4edda; color:#155724; border-radius:5px;">
+  Thank you! Your message has been sent successfully. Our team in Calgary will contact you soon.
+</div>
+ <!-- ================ from submission message end================= -->
+                        
                     </div>
                     <div class="col-lg-3 offset-lg-1">
                         <div class="media contact-info">
@@ -406,6 +413,28 @@
     
             });
         </script>
+
+    <script>
+  const form = document.querySelector(".contact_form");
+
+  form.addEventListener("submit", async function(event) {
+    event.preventDefault();
+    const data = new FormData(form);
+
+    const response = await fetch(form.action, {
+      method: form.method,
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    });
+
+    if (response.ok) {
+      form.reset();
+      document.getElementById("form-success").style.display = "block";
+    } else {
+      alert("Oops! There was a problem submitting your form.");
+    }
+  });
+</script>
     </body>
     
     </html>
