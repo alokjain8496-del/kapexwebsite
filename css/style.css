@@ -6489,3 +6489,24 @@ h6 {
   letter-spacing: 1px;
   color: #fff;
 }
+/* Fix layout shift for slider */
+.slider_area {
+    min-height: 600px;
+}
+
+.single_slider {
+    min-height: 600px;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* Mobile optimization */
+@media (max-width: 768px) {
+    .slider_area {
+        min-height: 400px;
+    }
+
+    .single_slider {
+        min-height: 400px;
+    }
+}
