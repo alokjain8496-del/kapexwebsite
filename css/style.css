@@ -405,7 +405,7 @@ h3 {
   bottom: 0;
   left: 0;
   z-index: 999;
-  background-color: #000;
+  background-color: #000 !important;
 }
 
 /* line 317, ../../Arafath/CL/Cl November/226. Construction/HTML/scss/theme-default.scss */
@@ -933,6 +933,11 @@ h3 {
 /* line 106, ../../Arafath/CL/Cl November/226. Construction/HTML/scss/_slick-nav.scss */
 .slicknav_menu .slicknav_nav {
   top: 12px;
+}
+
+/* Keep mobile menu icon visible on light headers */
+.slicknav_menu .slicknav_icon-bar {
+  background-color: #000 !important;
 }
 
 /* line 109, ../../Arafath/CL/Cl November/226. Construction/HTML/scss/_slick-nav.scss */
@@ -1738,6 +1743,7 @@ h3 {
 /* line 35, ../../Arafath/CL/Cl November/226. Construction/HTML/scss/_about.scss */
 .about_area .about_thumb img {
   width: 100%;
+  height: auto;
   box-shadow: 0 0 20px #ddd;
 }
 
