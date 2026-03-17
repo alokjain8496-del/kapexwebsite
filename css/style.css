@@ -3241,20 +3241,20 @@ h3 {
 
 /* line 201, ../../Arafath/CL/Cl November/226. Construction/HTML/scss/_footer.scss */
 .footer .socail_links {
-  margin-top: 47px;
+  margin-top: 0;
 }
 
 @media (max-width: 767px) {
   /* line 201, ../../Arafath/CL/Cl November/226. Construction/HTML/scss/_footer.scss */
   .footer .socail_links {
-    margin-top: 30px;
+    margin-top: 0;
   }
 }
 
 /* line 207, ../../Arafath/CL/Cl November/226. Construction/HTML/scss/_footer.scss */
 .footer .socail_links ul li {
   display: block;
-  margin-bottom: 8px;
+  line-height: 36px;
 }
 
 /* line 210, ../../Arafath/CL/Cl November/226. Construction/HTML/scss/_footer.scss */
