@@ -199,28 +199,25 @@
         }
     }
     .socail_links{
-        margin-top: 47px;
+        margin-top: 0;
         @media #{$mobile_device} {
-            margin-top: 30px;
+            margin-top: 0;
         }
         ul{
             li{
-                display: inline-block;
+                display: block;
+                line-height: 36px;
 
                 a{
                     font-size: 15px;
                     color: #C3B2F0;
-                    width: 30px;
-                    // height: 40px;
+                    width: auto;
                     display: inline-block;
-                    text-align: center;
+                    text-align: left;
                     background: transparent;
-                    // @include border-radius(50%);
-                    // line-height: 40px !important;
                     margin-right: 7px;
                     color: #FFFFFF;
-                    line-height: 40px !important;
-                    // border: 1px solid #E8E8E8;
+                    line-height: 1.8 !important;
                     color: #E8E8E8;
                  &:hover{
                      color: #F0542C !important;
