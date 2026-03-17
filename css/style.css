@@ -3253,21 +3253,26 @@ h3 {
 
 /* line 207, ../../Arafath/CL/Cl November/226. Construction/HTML/scss/_footer.scss */
 .footer .socail_links ul li {
-  display: inline-block;
+  display: block;
+  margin-bottom: 8px;
 }
 
 /* line 210, ../../Arafath/CL/Cl November/226. Construction/HTML/scss/_footer.scss */
 .footer .socail_links ul li a {
   font-size: 15px;
   color: #C3B2F0;
-  width: 30px;
+  width: auto;
   display: inline-block;
-  text-align: center;
+  text-align: left;
   background: transparent;
   margin-right: 7px;
   color: #FFFFFF;
-  line-height: 40px !important;
+  line-height: 1.8 !important;
   color: #E8E8E8;
+}
+
+.footer .socail_links ul li a i {
+  margin-right: 8px;
 }
 
 /* line 225, ../../Arafath/CL/Cl November/226. Construction/HTML/scss/_footer.scss */
