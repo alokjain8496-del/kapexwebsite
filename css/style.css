@@ -937,7 +937,7 @@ h3 {
 
 /* Keep mobile menu icon visible on light headers */
 .slicknav_menu .slicknav_icon-bar {
-  background-color: #000 !important;
+  background-color: #fff !important;
 }
 
 /* line 109, ../../Arafath/CL/Cl November/226. Construction/HTML/scss/_slick-nav.scss */
