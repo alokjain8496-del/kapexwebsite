@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Consolidate default index pages to the canonical homepage URL.
+RewriteCond %{THE_REQUEST} \s/+index\.(html|php)[?\s] [NC]
+RewriteRule ^index\.(html|php)$ https://www.kapexinfra.com [R=301,L]
+
+# Remove trailing slashes from non-directory URLs while preserving the site root.
+RewriteCond %{REQUEST_URI} !^/$
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ https://www.kapexinfra.com/$1 [R=301,L]
