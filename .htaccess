@@ -1,8 +1,13 @@
 RewriteEngine On
 
+# Serve a consistent canonical hostname over HTTPS.
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} !^www\.kapexinfra\.com$ [NC]
+RewriteRule ^ https://www.kapexinfra.com%{REQUEST_URI} [R=301,L]
+
 # Consolidate default index pages to the canonical homepage URL.
 RewriteCond %{THE_REQUEST} \s/+index\.(html|php)[?\s] [NC]
-RewriteRule ^index\.(html|php)$ https://www.kapexinfra.com [R=301,L]
+RewriteRule ^index\.(html|php)$ https://www.kapexinfra.com/ [R=301,L]
 
 # Remove trailing slashes from non-directory URLs while preserving the site root.
 RewriteCond %{REQUEST_URI} !^/$
