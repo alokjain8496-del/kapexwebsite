@@ -1,37 +1,8 @@
 body.blog-page .header-area {
-    background: #24304d;
-}
-body.blog-page .header-area .main-header-area {
-    position: relative;
-}
-body.blog-page .header-area .main-header-area.sticky {
-    background: rgba(255, 255, 255, 0.96);
-    box-shadow: 0 10px 30px rgba(9, 29, 62, 0.14);
-}
-body.blog-page .header-area .main-header-area .white_bg_bar {
-    padding: 0 28px;
-}
-body.blog-page .mobile_menu {
-    position: absolute;
-    right: 0;
-    width: auto;
-    top: 50%;
-    transform: translateY(-50%);
-}
-body.blog-page .mobile_menu .slicknav_menu {
     background: transparent;
-    padding: 0;
 }
-body.blog-page .mobile_menu .slicknav_btn {
-    margin: 0;
-    background: #091d3e;
-    border-radius: 12px;
-    padding: 12px 14px;
-    top: 0;
-}
-body.blog-page .mobile_menu .slicknav_icon-bar {
+body.blog-page .header-area .mobile_menu .slicknav_menu .slicknav_icon-bar {
     background-color: #fff !important;
-    box-shadow: none;
 }
 .blog-hero {
     padding: 92px 0 92px;
@@ -90,14 +61,6 @@ body.blog-page .mobile_menu .slicknav_icon-bar {
 .blog-layout {
     align-items: flex-start;
     row-gap: 30px;
-}
-.blog-main-column {
-    flex: 0 0 68%;
-    max-width: 68%;
-}
-.blog-sidebar-column {
-    flex: 0 0 32%;
-    max-width: 32%;
 }
 .blog-article, .blog-sidebar-card, .blog-card, .blog-template-note {
     background: #fff;
@@ -238,23 +201,7 @@ body.blog-page .mobile_menu .slicknav_icon-bar {
 .blog-template-note {
     border: 1px dashed #9db0cb;
 }
-@media (max-width: 1199px) {
-    .blog-main-column,
-    .blog-sidebar-column {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-}
 @media (max-width: 991px) {
-    body.blog-page .header-area .main-header-area .white_bg_bar {
-        padding: 18px 18px 14px;
-    }
-    body.blog-page .header-area .main-header-area .logo {
-        padding-right: 82px;
-    }
-    body.blog-page {
-        padding-top: 132px;
-    }
     .blog-hero { padding: 70px 0 70px; }
     .blog-shell, .blog-listing { padding: 70px 0; }
     .blog-article__image { height: 300px; }
@@ -269,5 +216,14 @@ body.blog-page .mobile_menu .slicknav_icon-bar {
     }
     .blog-hero__lede {
         font-size: 16px;
+    }
+}
+
+.blog-listing .blog-card {
+    margin-bottom: 0;
+}
+@media (min-width: 1200px) {
+    .blog-listing .container {
+        max-width: 1140px;
     }
 }
