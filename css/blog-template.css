@@ -185,6 +185,18 @@ body.blog-page .mobile_menu .slicknav_icon-bar {
     overflow: hidden;
     height: 100%;
 }
+.blog-card__media-link {
+    display: block;
+}
+.blog-card h3 {
+    margin-bottom: 16px;
+}
+.blog-card__title-link {
+    color: #091d3e;
+}
+.blog-card__title-link:hover {
+    color: #ff5e13;
+}
 .blog-card img {
     width: 100%;
     height: 260px;
