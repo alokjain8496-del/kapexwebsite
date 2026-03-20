@@ -259,3 +259,99 @@ body.blog-article-page .blog-article {
         padding-top: 56px;
     }
 }
+
+
+.blog-shell--article-detail {
+    padding-top: 72px;
+}
+body.blog-article-page .blog-article--editorial {
+    border-radius: 0;
+    box-shadow: none;
+    background: transparent;
+}
+body.blog-article-page .blog-article--editorial .blog-article__body {
+    padding: 0;
+}
+.blog-article__breadcrumbs {
+    margin-bottom: 24px;
+    color: #5f6f82;
+}
+.blog-article__breadcrumbs a {
+    color: inherit;
+}
+.blog-article__image--editorial {
+    height: auto;
+    max-height: 520px;
+    border-radius: 18px;
+    box-shadow: 0 18px 50px rgba(9,29,62,.12);
+}
+.blog-article__intro {
+    padding: 30px 0 10px;
+}
+.blog-article__intro h1 {
+    margin: 0 0 18px;
+    font-size: 48px;
+    line-height: 1.12;
+    color: #091d3e;
+}
+body.blog-article-page .blog-article__intro .blog-meta {
+    margin-bottom: 18px;
+}
+body.blog-article-page .blog-article__intro .blog-tags {
+    margin: 0 0 10px;
+}
+body.blog-article-page .blog-article--editorial p,
+body.blog-article-page .blog-article--editorial li,
+body.blog-article-page .blog-article--editorial td,
+body.blog-article-page .blog-article--editorial th {
+    font-size: 18px;
+    line-height: 1.85;
+}
+body.blog-article-page .blog-article--editorial h2 {
+    margin-top: 42px;
+    margin-bottom: 18px;
+    font-size: 34px;
+    line-height: 1.25;
+}
+body.blog-article-page .blog-article--editorial h3 {
+    margin-top: 28px;
+    margin-bottom: 14px;
+    font-size: 24px;
+    line-height: 1.35;
+}
+body.blog-article-page .blog-article--editorial .blog-checklist,
+body.blog-article-page .blog-article--editorial .blog-callout {
+    margin-top: 40px;
+}
+@media (max-width: 991px) {
+    .blog-shell--article-detail {
+        padding-top: 56px;
+    }
+    .blog-article__intro h1 {
+        font-size: 38px;
+    }
+    body.blog-article-page .blog-article--editorial p,
+    body.blog-article-page .blog-article--editorial li,
+    body.blog-article-page .blog-article--editorial td,
+    body.blog-article-page .blog-article--editorial th {
+        font-size: 17px;
+    }
+}
+@media (max-width: 575px) {
+    .blog-article__breadcrumbs {
+        margin-bottom: 18px;
+        font-size: 12px;
+    }
+    .blog-article__intro {
+        padding-top: 22px;
+    }
+    .blog-article__intro h1 {
+        font-size: 30px;
+    }
+    body.blog-article-page .blog-article--editorial h2 {
+        font-size: 28px;
+    }
+    body.blog-article-page .blog-article--editorial h3 {
+        font-size: 22px;
+    }
+}
