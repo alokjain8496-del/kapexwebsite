@@ -9,7 +9,15 @@ RewriteRule ^ https://www.kapexinfra.com%{REQUEST_URI} [R=301,L]
 RewriteCond %{THE_REQUEST} \s/+index\.(html|php)[?\s] [NC]
 RewriteRule ^index\.(html|php)$ https://www.kapexinfra.com/ [R=301,L]
 
+# Canonicalize the contact page to the extensionless URL.
+RewriteCond %{THE_REQUEST} \s/+contact\.html[?\s] [NC]
+RewriteRule ^contact\.html$ https://www.kapexinfra.com/contact [R=301,L]
+
+# Serve /contact from the contact.html file.
+RewriteRule ^contact/?$ /contact.html [L]
+
 # Remove trailing slashes from non-directory URLs while preserving the site root.
 RewriteCond %{REQUEST_URI} !^/$
+RewriteCond %{REQUEST_URI} !^/contact/$
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.+)/$ https://www.kapexinfra.com/$1 [R=301,L]
