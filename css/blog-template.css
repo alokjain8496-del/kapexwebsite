@@ -355,3 +355,83 @@ body.blog-article-page .blog-article--editorial .blog-callout {
         font-size: 22px;
     }
 }
+
+
+body.blog-article-page .blog-article--editorial a {
+    color: #0b63ce;
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 0.18em;
+}
+body.blog-article-page .blog-article--editorial a:hover,
+body.blog-article-page .blog-article--editorial a:focus {
+    color: #ff5e13;
+}
+body.blog-article-page .blog-article--editorial .blog-callout,
+body.blog-article-page .blog-article--editorial .blog-callout h2,
+body.blog-article-page .blog-article--editorial .blog-callout p,
+body.blog-article-page .blog-article--editorial .blog-callout li {
+    color: #ffffff;
+}
+body.blog-article-page .blog-article--editorial .blog-callout__text {
+    margin-bottom: 0;
+    max-width: 760px;
+}
+.blog-timeline {
+    display: grid;
+    gap: 14px;
+    margin-top: 16px;
+}
+.blog-timeline__item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 8px;
+    padding: 16px 20px;
+    border-radius: 14px;
+    background: #eef4fb;
+    color: #091d3e;
+}
+.blog-timeline__item strong {
+    color: #091d3e;
+}
+.blog-timeline__item--total {
+    background: #091d3e;
+    color: #ffffff;
+}
+.blog-timeline__item--total strong,
+.blog-timeline__item--total span {
+    color: inherit;
+}
+.blog-consultation-cta {
+    margin-top: 42px;
+    padding: 28px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #eef4fb 0%, #dbe9fb 100%);
+}
+.blog-consultation-cta h2 {
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+body.blog-article-page .blog-article--editorial .blog-consultation-cta__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    color: #ffffff;
+    text-decoration: none;
+}
+body.blog-article-page .blog-article--editorial .blog-consultation-cta__link:hover,
+body.blog-article-page .blog-article--editorial .blog-consultation-cta__link:focus {
+    color: #ffffff;
+}
+body.blog-article-page .blog-article--editorial .blog-consultation-cta__link i {
+    font-size: 18px;
+}
+@media (max-width: 575px) {
+    .blog-timeline__item {
+        padding: 14px 16px;
+    }
+    .blog-consultation-cta {
+        padding: 22px;
+    }
+}
