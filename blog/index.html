@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/themify-icons.css">
     <link rel="stylesheet" href="/css/flaticon.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/slicknav.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/blog-template.css">
     <script type="application/ld+json">
@@ -53,7 +55,7 @@
     }
     </script>
 </head>
-<body>
+<body class="blog-page">
 <header>
     <div class="header-area ">
         <div class="header-top_area d-none d-lg-block">
@@ -75,7 +77,7 @@
             </div>
         </div>
         <div id="sticky-header" class="main-header-area">
-            <div class="container"><div class="white_bg_bar"><div class="row align-items-center"><div class="col-12 d-lg-none"><div class="logo "><a href="/index.html" class="kapex-brand kapex-brand--mobile"><img src="/img/Kapexlogoicon.jpg" alt="Kapex Infra icon" width="105" height="105" class="kapex-brand__icon" decoding="async"><span class="kapex-brand__text"><span>KAPEX</span><span>INFRA</span></span></a></div></div><div class="col-xl-8 col-lg-8"><div class="main-menu d-none d-lg-block"><nav><ul id="navigation"><li><a href="/index.html">home</a></li><li><a href="/about.html">About</a></li><li><a href="/services.html">Services</a></li><li><a class="active" href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></nav></div></div><div class="col-xl-4 col-lg-4 d-none d-lg-block"><div class="Appointment d-flex justify-content-end"><div class="search_icon"><a data-toggle="modal" data-target="#exampleModalCenter" href="#"><i class="ti-search"></i></a></div></div></div><div class="col-12"><div class="mobile_menu d-block d-lg-none"></div></div></div></div></div>
+            <div class="container"><div class="white_bg_bar"><div class="row align-items-center"><div class="col-12 d-lg-none"><div class="logo "><a href="/index.html" class="kapex-brand kapex-brand--mobile"><img src="/img/Kapexlogoicon.jpg" alt="Kapex Infra icon" width="105" height="105" class="kapex-brand__icon" decoding="async"><span class="kapex-brand__text"><span>KAPEX</span><span>INFRA</span></span></a></div></div><div class="col-xl-8 col-lg-8"><div class="main-menu d-none d-lg-block"><nav><ul id="navigation"><li><a href="/index.html">home</a></li><li><a href="/about.html">About</a></li><li><a href="/services.html">Services</a></li><li><a class="active" href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li></ul></nav></div></div><div class="col-xl-4 col-lg-4 d-none d-lg-block"></div><div class="col-12"><div class="mobile_menu d-block d-lg-none"></div></div></div></div></div>
         </div>
     </div>
 </header>
@@ -88,8 +90,9 @@
 </section>
 <section class="blog-listing">
     <div class="container">
-        <div class="row blog-grid-gap">
-            <div class="col-lg-8">
+        <div class="row blog-layout">
+            <div class="col-lg-8 blog-main-column">
+    
                 <div class="row blog-grid-gap">
                     <div class="col-md-6">
                         <article class="blog-card">
@@ -107,7 +110,7 @@
                                     <span class="blog-tag">Permits</span>
                                     <span class="blog-tag">Rental ROI</span>
                                 </div>
-                                <a href="/blog/backyard-suite-calgary-zoning-permits-incentives-2026-guide/" class="boxed-btn3">Read Article</a>
+                                <div class="blog-card__footer"><a href="/blog/backyard-suite-calgary-zoning-permits-incentives-2026-guide/" class="blog-card__link">Read Article <i class="fa fa-arrow-right"></i></a></div>
                             </div>
                         </article>
                     </div>
@@ -126,13 +129,13 @@
                                     <span class="blog-tag">Basement Suites</span>
                                     <span class="blog-tag">Renovation Planning</span>
                                 </div>
-                                <a href="/blog/how-to-build-secondary-suite-calgary/" class="boxed-btn3">Read Article</a>
+                                <div class="blog-card__footer"><a href="/blog/how-to-build-secondary-suite-calgary/" class="blog-card__link">Read Article <i class="fa fa-arrow-right"></i></a></div>
                             </div>
                         </article>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4 blog-sidebar-column">
                 <aside class="blog-sidebar-card">
                     <h3>Standard blog format</h3>
                     <p>Every Kapex Infra blog post now follows one consistent structure for readability and SEO:</p>
