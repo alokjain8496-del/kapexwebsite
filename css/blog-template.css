@@ -1,20 +1,12 @@
-body.blog-page {
-    padding-top: 196px;
-}
 body.blog-page .header-area {
-    position: fixed;
     background: #24304d;
-    box-shadow: 0 10px 30px rgba(9, 29, 62, 0.18);
 }
 body.blog-page .header-area .main-header-area {
     position: relative;
 }
 body.blog-page .header-area .main-header-area.sticky {
-    position: relative;
-    top: 0;
-    transform: none;
-    background: transparent;
-    box-shadow: none;
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: 0 10px 30px rgba(9, 29, 62, 0.14);
 }
 body.blog-page .header-area .main-header-area .white_bg_bar {
     padding: 0 28px;
