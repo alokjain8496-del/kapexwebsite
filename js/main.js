@@ -254,34 +254,44 @@ center: false,
       slides[currentIndex].classList.add('is-active');
     }
 
+    function stopAutoSlide() {
+      window.clearInterval(autoSlideId);
+      autoSlideId = null;
+    }
+
     function startAutoSlide() {
+      if (slides.length < 2 || autoSlideId) {
+        return;
+      }
+
       autoSlideId = window.setInterval(function () {
         showSlide(currentIndex + 1);
       }, 5000);
     }
 
     function resetAutoSlide() {
-      window.clearInterval(autoSlideId);
+      stopAutoSlide();
       startAutoSlide();
     }
 
-    prevButton.addEventListener('click', function () {
-      showSlide(currentIndex - 1);
-      resetAutoSlide();
-    });
+    if (prevButton) {
+      prevButton.addEventListener('click', function () {
+        showSlide(currentIndex - 1);
+        resetAutoSlide();
+      });
+    }
 
-    nextButton.addEventListener('click', function () {
-      showSlide(currentIndex + 1);
-      resetAutoSlide();
-    });
+    if (nextButton) {
+      nextButton.addEventListener('click', function () {
+        showSlide(currentIndex + 1);
+        resetAutoSlide();
+      });
+    }
 
-    slider.addEventListener('mouseenter', function () {
-      window.clearInterval(autoSlideId);
-    });
-
-    slider.addEventListener('mouseleave', function () {
-      startAutoSlide();
-    });
+    slider.addEventListener('mouseenter', stopAutoSlide);
+    slider.addEventListener('mouseleave', startAutoSlide);
+    slider.addEventListener('touchstart', stopAutoSlide, { passive: true });
+    slider.addEventListener('touchend', startAutoSlide);
 
     showSlide(0);
     startAutoSlide();
