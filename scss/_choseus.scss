@@ -64,3 +64,40 @@
         }
     }
 }
+
+.chose_us_area{
+    .row{
+        justify-content: flex-end !important;
+    }
+    .chose_info{
+        max-width: 760px;
+        margin: 0 0 0 auto;
+        padding: 56px 60px;
+        text-align: left;
+        &::before{
+            margin: 0 0 28px;
+        }
+        h2,
+        h3{
+            &::after{
+                margin: 24px 0 0;
+            }
+        }
+    }
+    @media (max-width: 767px){
+        .chose_info{
+            margin: 0 auto;
+            padding: 32px 22px;
+            text-align: center;
+            &::before{
+                margin: 0 auto 22px;
+            }
+            h2,
+            h3{
+                &::after{
+                    margin: 18px auto 0;
+                }
+            }
+        }
+    }
+}
