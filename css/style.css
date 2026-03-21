@@ -2585,6 +2585,9 @@ h3 {
   .bradcam_text--desktop-shift {
     transform: translateY(18px);
   }
+  .bradcam_text--about-desktop-spacing {
+    margin-top: 80px;
+  }
 }
 
 @media (max-width: 767px) {
