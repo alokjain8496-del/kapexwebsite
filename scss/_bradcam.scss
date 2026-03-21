@@ -111,6 +111,11 @@
     margin: 0 auto;
     padding: 0 15px;
 }
+@media (min-width: 992px) {
+    .bradcam_text--desktop-shift{
+        transform: translateY(18px);
+    }
+}
 
 .popup_box{
     background: #fff;
