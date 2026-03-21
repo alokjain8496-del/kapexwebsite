@@ -6535,7 +6535,8 @@ h6 {
 }
 
 .kapex-testimonials__header {
-  margin-bottom: 45px;
+  max-width: 760px;
+  margin: 0 auto 45px;
 }
 
 .kapex-testimonials__eyebrow {
@@ -6564,10 +6565,15 @@ h6 {
 
 .kapex-testimonials__slider {
   position: relative;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.kapex-testimonials__controls {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
+  justify-content: flex-end;
+  gap: 14px;
+  margin-bottom: 22px;
 }
 
 .kapex-testimonials__viewport {
@@ -6584,7 +6590,7 @@ h6 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 50px 56px;
+  padding: 56px 72px;
   background: #ffffff;
   border-radius: 24px;
   box-shadow: 0 18px 45px rgba(10, 37, 64, 0.12);
@@ -6682,7 +6688,7 @@ h6 {
   }
 
   .kapex-testimonials__header {
-    margin-bottom: 32px;
+    margin: 0 auto 32px;
   }
 
   .kapex-testimonials__header h2 {
@@ -6693,8 +6699,8 @@ h6 {
     font-size: 16px;
   }
 
-  .kapex-testimonials__slider {
-    gap: 14px;
+  .kapex-testimonials__controls {
+    margin-bottom: 18px;
   }
 
   .kapex-testimonials__viewport {
@@ -6731,18 +6737,12 @@ h6 {
 }
 
 @media (max-width: 575px) {
-  .kapex-testimonials__slider {
-    display: grid;
-    grid-template-columns: 1fr auto auto;
-    align-items: end;
+  .kapex-testimonials__controls {
+    justify-content: flex-end;
+    margin-bottom: 16px;
   }
 
   .kapex-testimonials__viewport {
-    grid-column: 1 / -1;
     min-height: 380px;
-  }
-
-  .kapex-testimonials__nav--prev {
-    justify-self: end;
   }
 }
