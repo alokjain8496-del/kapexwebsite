@@ -3109,6 +3109,9 @@ h3 {
 
 /* line 66, ../../Arafath/CL/Cl November/226. Construction/HTML/scss/_footer.scss */
 .footer .footer_top .footer_widget .footer_logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   font-size: 22px;
   font-weight: 400;
   color: #fff;
@@ -3123,7 +3126,17 @@ h3 {
   }
 }
 
-/* line 76, ../../Arafath/CL/Cl November/226. Construction/HTML/scss/_footer.scss */
+/* line 79, ../../Arafath/CL/Cl November/226. Construction/HTML/scss/_footer.scss */
+.footer .footer_top .footer_widget .footer_logo .footer_logo__text {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+/* line 88, ../../Arafath/CL/Cl November/226. Construction/HTML/scss/_footer.scss */
 .footer .footer_top .footer_widget p {
   color: #919191;
   font-size: 14px;

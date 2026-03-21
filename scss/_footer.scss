@@ -64,6 +64,9 @@
                 }
             }
             .footer_logo{
+                display: inline-flex;
+                align-items: center;
+                gap: 10px;
                 font-size: 22px;
                 font-weight: 400;
                 color: #fff;
@@ -71,6 +74,15 @@
                 margin-bottom: 40px;
                 @media #{$mobile_device} {
                     margin-bottom: 20px;
+                }
+
+                .footer_logo__text{
+                    color: #ffffff;
+                    font-size: 14px;
+                    font-weight: 700;
+                    letter-spacing: 1.5px;
+                    line-height: 1;
+                    white-space: nowrap;
                 }
             }
             p {
