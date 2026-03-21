@@ -2581,6 +2581,12 @@ h3 {
   padding: 0 15px;
 }
 
+@media (min-width: 992px) {
+  .bradcam_text--desktop-shift {
+    transform: translateY(18px);
+  }
+}
+
 @media (max-width: 767px) {
   /* line 13, ../../Arafath/CL/Cl November/226. Construction/HTML/scss/_bradcam.scss */
   .bradcam_area {
