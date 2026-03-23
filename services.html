@@ -48,6 +48,44 @@
             object-position: center;
             display: block;
         }
+
+        .service-card-link {
+            display: block;
+            color: inherit;
+            text-decoration: none;
+            height: 100%;
+        }
+
+        .service-feature {
+            padding: 0 0 120px;
+        }
+
+        .service-feature__box {
+            background: #fff6ed;
+            border-radius: 12px;
+            padding: 40px 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .service-feature__box p {
+            margin-bottom: 0;
+            max-width: 760px;
+        }
+
+        @media (max-width: 767px) {
+            .service-feature {
+                padding: 0 0 70px;
+            }
+
+            .service-feature__box {
+                padding: 28px 22px;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
     </style>
 </head>
 
@@ -226,17 +264,17 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="single_service">
-                        <div class="thumb service-card__thumb">
-                            <img src="img/basement.jpg" alt="Finished basement renovation" width="490" height="550" loading="lazy" decoding="async" fetchpriority="low">
+                    <a class="service-card-link" href="/basement-suite-calgary">
+                        <div class="single_service">
+                            <div class="thumb service-card__thumb">
+                                <img src="img/basement.jpg" alt="Finished basement renovation" width="490" height="550" loading="lazy" decoding="async" fetchpriority="low">
+                            </div>
+                            <div class="service_info">
+                                <h3>Basement Suite Development</h3>
+                                <p>Legal basement suites, secondary suites, and full basement renovation services in Calgary</p>
+                            </div>
                         </div>
-                        <div class="service_info">
-                            <a href="#">
-                                <h3>Basement Renovations</h3>
-                            </a>
-                            <p>Legal basement development and remodeling designed to increase space and property value.</p>
-                        </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="single_service">
@@ -256,6 +294,18 @@
         </div>
     </div>
     <!-- service_area_end  -->
+
+    <section class="service-feature">
+        <div class="container">
+            <div class="service-feature__box">
+                <div>
+                    <h3>Basement Suite Development in Calgary</h3>
+                    <p>We specialize in legal basement suites and full basement renovation services designed to increase your property value and rental income.</p>
+                </div>
+                <a href="/basement-suite-calgary" class="boxed-btn3">Explore Basement Suites</a>
+            </div>
+        </div>
+    </section>
     <!-- chose_us_area start -->
     <div class="chose_us_area chose_bg_1">
         <div class="container">

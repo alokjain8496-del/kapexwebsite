@@ -50,6 +50,45 @@
     <link rel="stylesheet" href="css/themify-icons.css">
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .service-card-link {
+            display: block;
+            color: inherit;
+            text-decoration: none;
+            height: 100%;
+        }
+
+        .services-highlight {
+            padding: 0 0 120px;
+        }
+
+        .services-highlight__box {
+            background: #fff6ed;
+            border-radius: 12px;
+            padding: 40px 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .services-highlight__box p {
+            margin-bottom: 0;
+            max-width: 760px;
+        }
+
+        @media (max-width: 767px) {
+            .services-highlight {
+                padding: 0 0 70px;
+            }
+
+            .services-highlight__box {
+                padding: 28px 22px;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
 
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="preload" href="css/magnific-popup.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -354,15 +393,17 @@
                         </div>
                     </div>
 
+                    <a class="service-card-link" href="/basement-suite-calgary">
                     <div class="single_service">
                       <!--  <div class="thumb">
                             <img src="img/about/about.png" alt="Construction team at work" width="490" height="550" loading="lazy" decoding="async">
                         </div> -->
                         <div class="service_info">
-                            <h3>Basement Renovations</h3>
-                            <p>Legal basement development and remodeling designed to increase space and property value.</p>
+                            <h3>Basement Suite Development</h3>
+                            <p>Basement suite development in Calgary including legal secondary suites and income-generating living spaces.</p>
                         </div>
                     </div>
+                    </a>
 
                     <div class="single_service">
                       <!--  <div class="thumb">
@@ -383,7 +424,17 @@
          </div>
 <!-- service_area_end  -->
 
-
+    <section class="services-highlight">
+        <div class="container">
+            <div class="services-highlight__box">
+                <div>
+                    <h3>Basement Suite Development in Calgary</h3>
+                    <p>We specialize in legal basement suites and full basement renovation services designed to increase your property value and rental income.</p>
+                </div>
+                <a href="/basement-suite-calgary" class="boxed-btn3">Explore Basement Suites</a>
+            </div>
+        </div>
+    </section>
 
     <!-- gallery_area-START -->
    <!--
