@@ -435,3 +435,30 @@ body.blog-article-page .blog-article--editorial .blog-consultation-cta__link i {
         padding: 22px;
     }
 }
+
+
+body.blog-article-page .blog-article--editorial .blog-consultation-cta--top {
+    margin-top: 30px;
+    margin-bottom: 28px;
+}
+body.blog-article-page .blog-article--editorial .blog-consultation-cta--top ul {
+    margin: 0 0 20px;
+    padding-left: 18px;
+}
+body.blog-article-page .blog-article--editorial .blog-consultation-cta--top li {
+    list-style: disc;
+    margin-bottom: 8px;
+}
+body.blog-article-page .blog-floating-consultation {
+    position: fixed;
+    right: 20px;
+    bottom: 92px;
+    z-index: 999;
+    box-shadow: 0 10px 20px rgba(9, 29, 62, 0.2);
+}
+@media (max-width: 767px) {
+    body.blog-article-page .blog-floating-consultation {
+        right: 14px;
+        bottom: 82px;
+    }
+}
