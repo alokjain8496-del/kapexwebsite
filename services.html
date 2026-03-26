@@ -56,6 +56,35 @@
             height: 100%;
         }
 
+        .service_info {
+            position: relative;
+            padding-right: 64px;
+        }
+
+        .service-read-more {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            border: 1px solid #d8d8d8;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: #000;
+            text-decoration: none;
+            background: #fff;
+            transition: all 0.2s ease;
+        }
+
+        .service-read-more:hover,
+        .service-read-more:focus {
+            background: #ff5e13;
+            border-color: #ff5e13;
+            color: #fff;
+        }
+
         .service-feature {
             padding: 0 0 120px;
         }
@@ -246,6 +275,9 @@
                             <div class="service_info">
                                 <h3>General Contracting</h3>
                                 <p>Full-service general contracting in Calgary including construction, renovation, and project management</p>
+                                <span class="service-read-more" aria-hidden="true">
+                                    <i class="fa fa-arrow-right"></i>
+                                </span>
                             </div>
                         </div>
                     </a>
@@ -256,10 +288,13 @@
                             <img src="new home.webp" alt="New home under construction" width="490" height="550" loading="lazy" decoding="async" fetchpriority="low">
                         </div>
                         <div class="service_info">
-                            <a href="#">
+                            <a href="/contact">
                                 <h3>New Home Construction</h3>
                             </a>
                             <p>Custom home building services delivered with quality craftsmanship and professional management.</p>
+                            <a class="service-read-more" href="/contact" aria-label="Read more about New Home Construction">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -272,6 +307,9 @@
                             <div class="service_info">
                                 <h3>Basement Renovation &amp; Suite Development</h3>
                                 <p>Legal basement suites, secondary suites, and full basement renovation services in Calgary.</p>
+                                <span class="service-read-more" aria-hidden="true">
+                                    <i class="fa fa-arrow-right"></i>
+                                </span>
                             </div>
                         </div>
                     </a>
@@ -285,6 +323,9 @@
                             <div class="service_info">
                                 <h3>Garage Construction</h3>
                                 <p>Affordable and custom detached garage packages with permits, concrete, framing, and finishing.</p>
+                                <span class="service-read-more" aria-hidden="true">
+                                    <i class="fa fa-arrow-right"></i>
+                                </span>
                             </div>
                         </div>
                     </a>
@@ -295,10 +336,13 @@
                             <img src="house.webp" alt="Home and industrial renovation work" width="490" height="550" loading="lazy" decoding="async" fetchpriority="low">
                         </div>
                         <div class="service_info">
-                            <a href="#">
+                            <a href="/contact">
                                 <h3>Home & Industrial Renovations</h3>
                             </a>
                             <p>Flooring, garages, structural upgrades and complete renovation solutions.</p>
+                            <a class="service-read-more" href="/contact" aria-label="Read more about Home &amp; Industrial Renovations">
+                                <i class="fa fa-arrow-right"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
