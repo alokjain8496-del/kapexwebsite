@@ -57,19 +57,22 @@
         }
 
         .service_info {
-            position: relative;
-            padding-right: 64px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .service_info p {
+            margin-bottom: 0;
         }
 
         .service-read-more {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            width: auto;
-            height: auto;
+            position: static;
+            min-height: 28px;
             border-radius: 0;
             border: 0;
-            padding: 0;
+            padding: 4px 0;
             display: inline-flex;
             align-items: center;
             justify-content: center;
@@ -79,9 +82,11 @@
             background: transparent;
             font-size: 14px;
             font-weight: 600;
+            line-height: 1;
             text-transform: uppercase;
             letter-spacing: 0.3px;
             transition: all 0.2s ease;
+            white-space: nowrap;
         }
 
         .service-read-more:hover,
