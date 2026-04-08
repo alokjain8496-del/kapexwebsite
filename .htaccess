@@ -10,11 +10,10 @@ RewriteCond %{THE_REQUEST} \s/+index\.(html|php)[?\s] [NC]
 RewriteRule ^index\.(html|php)$ https://www.kapexinfra.com/ [R=301,L]
 
 # Canonicalize the contact page to the extensionless URL.
-RewriteCond %{THE_REQUEST} \s/+contact\.html[?\s] [NC]
-RewriteRule ^contact\.html$ https://www.kapexinfra.com/contact [R=301,L]
+RewriteRule ^contact\.html$ https://www.kapexinfra.com/contact [R=301,L,NC]
 
-# Serve /contact from the contact.html file.
-RewriteRule ^contact/?$ /contact.html [L]
+# Serve /contact from the folder route (contact/index.html) instead of contact.html.
+RewriteRule ^contact/?$ /contact/index.html [L]
 
 # Remove trailing slashes from non-directory URLs while preserving the site root.
 RewriteCond %{REQUEST_URI} !^/$
