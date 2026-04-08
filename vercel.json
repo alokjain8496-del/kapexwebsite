@@ -2,6 +2,17 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "kapexinfra.com"
+        }
+      ],
+      "destination": "https://www.kapexinfra.com/$1",
+      "permanent": true
+    },
+    {
       "source": "/contact.html",
       "destination": "/contact",
       "permanent": true
