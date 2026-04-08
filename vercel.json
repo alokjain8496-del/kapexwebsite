@@ -32,5 +32,15 @@
       "destination": "/contact",
       "permanent": true
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/about",
+      "destination": "/about.html"
+    },
+    {
+      "source": "/services",
+      "destination": "/services.html"
+    }
   ]
 }
