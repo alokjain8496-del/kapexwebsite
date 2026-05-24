@@ -6968,3 +6968,88 @@ h6 {
     font-size: 20px;
   }
 }
+
+
+/* Pricing plan section */
+.pricing_plan_area {
+  background: #f8fbff;
+  padding-top: 120px;
+  padding-bottom: 90px;
+}
+
+.pricing_plan_area .section_title p {
+  max-width: 580px;
+  margin: 15px auto 0;
+}
+
+.single_pricing_plan {
+  background: #ffffff;
+  border: 1px solid #e8eef5;
+  border-radius: 10px;
+  padding: 42px 28px;
+  margin-bottom: 30px;
+  box-shadow: 0 12px 35px rgba(33, 59, 85, 0.08);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.single_pricing_plan:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(33, 59, 85, 0.15);
+}
+
+.single_pricing_plan h4 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.single_pricing_plan .plan_price {
+  color: #1f1f1f;
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  line-height: 1;
+}
+
+.single_pricing_plan ul {
+  margin: 0 0 30px;
+  padding: 0;
+  list-style: none;
+}
+
+.single_pricing_plan ul li {
+  font-size: 16px;
+  color: #5b6c7d;
+  margin-bottom: 12px;
+}
+
+.single_pricing_plan .plan_badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 20px;
+  background: #f5a623;
+  color: #fff;
+}
+
+.single_pricing_plan.active_plan {
+  border-color: #f5a623;
+}
+
+@media (max-width: 767px) {
+  .pricing_plan_area {
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
+
+  .single_pricing_plan {
+    padding: 34px 22px;
+  }
+
+  .single_pricing_plan .plan_price {
+    font-size: 38px;
+  }
+}
