@@ -52,6 +52,103 @@
     <link rel="stylesheet" href="css/slicknav.css">
 
     <link rel="stylesheet" href="css/style.css">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://www.kapexinfra.com/#localbusiness",
+          "name": "Kapex Infra",
+          "image": "https://www.kapexinfra.com/img/Kapexlogoicon.jpg",
+          "url": "https://www.kapexinfra.com/services",
+          "telephone": "+1-403-994-6166",
+          "email": "info@kapexinfra.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "206 Elgin View SE",
+            "addressLocality": "Calgary",
+            "addressRegion": "AB",
+            "addressCountry": "CA"
+          },
+          "areaServed": {
+            "@type": "City",
+            "name": "Calgary"
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday"
+              ],
+              "opens": "09:00",
+              "closes": "19:00"
+            }
+          ],
+          "sameAs": [
+            "https://www.facebook.com/people/Kapex-Infra/61588324569553/",
+            "https://www.instagram.com/kapex.infra/",
+            "https://www.linkedin.com/in/kapex-infra-ltd-1a87a23b1/"
+          ]
+        },
+        {
+          "@type": "Service",
+          "@id": "https://www.kapexinfra.com/services#construction-services",
+          "name": "Civil construction and infrastructure services in Calgary",
+          "provider": {
+            "@id": "https://www.kapexinfra.com/#localbusiness"
+          },
+          "areaServed": "Calgary, Alberta",
+          "serviceType": [
+            "General contracting",
+            "New home construction",
+            "Basement renovation and suite development",
+            "Garage construction",
+            "Home and industrial renovations"
+          ],
+          "url": "https://www.kapexinfra.com/services",
+          "description": "Kapex Infra provides general contracting, civil construction, infrastructure work, garage construction, basement renovation, legal suite development, and renovation services in Calgary."
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://www.kapexinfra.com/services#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What construction services does Kapex Infra provide in Calgary?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Kapex Infra provides general contracting, new home construction, basement renovation and suite development, garage construction, and home and light industrial renovations in Calgary."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can Kapex Infra help with permits and project planning?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. Kapex Infra helps clients plan the scope, coordinate permit requirements, organize materials and trades, and understand next steps before construction begins."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Who does Kapex Infra serve?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Kapex Infra serves Calgary homeowners and businesses that need construction, renovation, infrastructure, or general contracting support."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
     <style>
         .service-card__thumb {
@@ -200,6 +297,32 @@
         .service-feature__box p {
             margin-bottom: 0;
             max-width: 760px;
+        }
+
+
+        .services-faq {
+            padding: 0 0 90px;
+        }
+
+        .services-faq__grid {
+            display: grid;
+            gap: 18px;
+        }
+
+        .services-faq__item {
+            background: #ffffff;
+            border: 1px solid #eeeeee;
+            border-radius: 10px;
+            padding: 24px 26px;
+        }
+
+        .services-faq__item h3 {
+            font-size: 21px;
+            margin-bottom: 10px;
+        }
+
+        .services-faq__item p {
+            margin-bottom: 0;
         }
 
         @media (max-width: 767px) {
@@ -602,6 +725,37 @@
             </div>
         </div>
     -->
+
+
+    <section class="services-faq" aria-labelledby="services-faq-heading">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-9 col-lg-10 text-center">
+                    <span class="services-intro__eyebrow">Service FAQs</span>
+                    <h2 id="services-faq-heading">Clear answers about Kapex Infra services</h2>
+                    <p>Use these quick answers to understand what we do, who we serve, and how we support construction projects in Calgary.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xl-9 col-lg-10">
+                    <div class="services-faq__grid">
+                        <article class="services-faq__item">
+                            <h3>What construction services does Kapex Infra provide in Calgary?</h3>
+                            <p>Kapex Infra provides general contracting, new home construction, basement renovation and suite development, garage construction, and home and light industrial renovations in Calgary.</p>
+                        </article>
+                        <article class="services-faq__item">
+                            <h3>Can Kapex Infra help with permits and project planning?</h3>
+                            <p>Yes. Kapex Infra helps clients plan the scope, coordinate permit requirements, organize materials and trades, and understand next steps before construction begins.</p>
+                        </article>
+                        <article class="services-faq__item">
+                            <h3>Who does Kapex Infra serve?</h3>
+                            <p>Kapex Infra serves Calgary homeowners and businesses that need construction, renovation, infrastructure, or general contracting support.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- testimonials_start -->
     <section class="kapex-testimonials" aria-labelledby="kapex-testimonials-heading">
