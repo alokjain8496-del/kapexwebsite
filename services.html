@@ -113,6 +113,76 @@
             text-decoration: none;
         }
 
+        .services-intro {
+            padding: 90px 0 20px;
+        }
+
+        .services-intro__eyebrow {
+            color: #ff5e13;
+            display: inline-block;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+        }
+
+        .services-intro h2 {
+            font-size: 34px;
+            line-height: 1.25;
+            margin-bottom: 18px;
+        }
+
+        .services-intro p {
+            margin-bottom: 14px;
+        }
+
+        .services-intro__list {
+            margin: 18px 0 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .services-intro__list li {
+            margin-bottom: 10px;
+            padding-left: 24px;
+            position: relative;
+        }
+
+        .services-intro__list li::before {
+            color: #ff5e13;
+            content: "\2713";
+            font-weight: 700;
+            left: 0;
+            position: absolute;
+        }
+
+        .services-steps {
+            padding: 0 0 80px;
+        }
+
+        .services-steps__grid {
+            display: grid;
+            gap: 22px;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .services-steps__card {
+            background: #ffffff;
+            border: 1px solid #eeeeee;
+            border-radius: 10px;
+            padding: 26px;
+        }
+
+        .services-steps__card h3 {
+            font-size: 21px;
+            margin-bottom: 12px;
+        }
+
+        .services-steps__card p {
+            margin-bottom: 0;
+        }
+
         .service-feature {
             padding: 0 0 120px;
         }
@@ -133,6 +203,22 @@
         }
 
         @media (max-width: 767px) {
+            .services-intro {
+                padding: 60px 0 10px;
+            }
+
+            .services-intro h2 {
+                font-size: 28px;
+            }
+
+            .services-steps {
+                padding: 0 0 50px;
+            }
+
+            .services-steps__grid {
+                grid-template-columns: 1fr;
+            }
+
             .service-feature {
                 padding: 0 0 70px;
             }
@@ -290,6 +376,24 @@
     </div>
     <!--/ bradcam_area  -->
 
+    <section class="services-intro" aria-labelledby="services-intro-heading">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-9 col-lg-10">
+                    <span class="services-intro__eyebrow">Calgary construction services</span>
+                    <h2 id="services-intro-heading">Simple, reliable help for your next build or renovation</h2>
+                    <p>Kapex Infra helps Calgary homeowners and businesses plan, build, and improve their spaces. We keep the process clear. You get direct updates, careful work, and a team that respects your budget and timeline.</p>
+                    <p>Tell us what you need. We can help with permits, planning, materials, trades, and site work. Our goal is to make each step easier from the first call to the final walk-through.</p>
+                    <ul class="services-intro__list">
+                        <li>General contracting for small and large projects.</li>
+                        <li>New homes, garages, basements, and legal suites.</li>
+                        <li>Home and light industrial renovations in Calgary.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- service_area_start  -->
     <div class="service_area add_padding">
         <div class="container">
@@ -302,7 +406,7 @@
                             </div>
                             <div class="service_info">
                                 <h3>General Contracting</h3>
-                                <p>Full-service general contracting in Calgary including construction, renovation, and project management</p>
+                                <p>We manage your Calgary build from plan to finish, including scheduling, trades, and site work.</p>
                                 <span class="service-read-more" aria-hidden="true">
                                     Read More
                                     <i class="fa fa-arrow-right"></i>
@@ -320,7 +424,7 @@
                             <a href="/contact">
                                 <h3>New Home Construction</h3>
                             </a>
-                            <p>Custom home building services delivered with quality craftsmanship and professional management.</p>
+                            <p>We build custom homes with clear plans, skilled trades, and steady project updates.</p>
                             <a class="service-read-more" href="/contact" aria-label="Read more about New Home Construction">
                                 Read More
                                 <i class="fa fa-arrow-right"></i>
@@ -336,7 +440,7 @@
                             </div>
                             <div class="service_info">
                                 <h3>Basement Renovation &amp; Suite Development</h3>
-                                <p>Legal basement suites, secondary suites, and full basement renovation services in Calgary.</p>
+                                <p>We finish basements and build legal suites that are safe, useful, and ready for tenants or family.</p>
                                 <span class="service-read-more" aria-hidden="true">
                                     Read More
                                     <i class="fa fa-arrow-right"></i>
@@ -353,7 +457,7 @@
                             </div>
                             <div class="service_info">
                                 <h3>Garage Construction</h3>
-                                <p>Affordable and custom detached garage packages with permits, concrete, framing, and finishing.</p>
+                                <p>We build detached garages and handle permits, concrete, framing, and final details.</p>
                                 <span class="service-read-more" aria-hidden="true">
                                     Read More
                                     <i class="fa fa-arrow-right"></i>
@@ -371,7 +475,7 @@
                             <a href="/contact">
                                 <h3>Home & Industrial Renovations</h3>
                             </a>
-                            <p>Flooring, garages, structural upgrades and complete renovation solutions.</p>
+                            <p>We update homes and work spaces with new floors, garages, repairs, and full renovations.</p>
                             <a class="service-read-more" href="/contact" aria-label="Read more about Home &amp; Industrial Renovations">
                                 Read More
                                 <i class="fa fa-arrow-right"></i>
@@ -385,12 +489,38 @@
     </div>
     <!-- service_area_end  -->
 
+    <section class="services-steps" aria-labelledby="services-steps-heading">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-9 col-lg-10 text-center">
+                    <span class="services-intro__eyebrow">How we work</span>
+                    <h2 id="services-steps-heading">A clear path from idea to finished space</h2>
+                    <p>Good work starts with a simple plan. We explain the steps, answer your questions, and keep you informed while the job is underway.</p>
+                </div>
+            </div>
+            <div class="services-steps__grid">
+                <div class="services-steps__card">
+                    <h3>1. Share your goals</h3>
+                    <p>Tell us what you want to build or fix. We listen, ask clear questions, and look at your space.</p>
+                </div>
+                <div class="services-steps__card">
+                    <h3>2. Review the plan</h3>
+                    <p>We outline the work, timing, and next steps. You know what to expect before work begins.</p>
+                </div>
+                <div class="services-steps__card">
+                    <h3>3. Build with care</h3>
+                    <p>Our team manages the site and keeps you updated. We aim for safe work, clean spaces, and strong results.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="service-feature">
         <div class="container">
             <div class="service-feature__box">
                 <div>
                     <h3>Basement Renovation &amp; Suite Development in Calgary</h3>
-                    <p>We specialize in legal basement suites and full basement renovation services designed to increase your property value and rental income. Read our <a href="/blog/how-to-build-secondary-suite-calgary/">Secondary Suite Calgary guide</a> for zoning, permits, incentives, and planning tips.</p>
+                    <p>We build legal basement suites and renovate basements across Calgary. A good suite can add useful space and may support rental income. Read our <a href="/blog/how-to-build-secondary-suite-calgary/">Secondary Suite Calgary guide</a> for zoning, permits, rebates, and planning tips.</p>
                 </div>
                 <a href="/basement-suite-calgary" class="boxed-btn3">Explore Basement Suites</a>
             </div>
@@ -404,11 +534,9 @@
                     <div class="chose_info">
                         <h3>Why Choose Us?</h3>
                         <p class="lasrge_text">
-                            “Kapex Infra Construction is a full-service construction company offering end-to-end
-                            building solutions from planning to completion.
+                            Kapex Infra Construction plans and builds projects from start to finish.
                         </p>
-                        <p>Our experienced team delivers residential and commercial projects with quality
-                            workmanship, clear communication, and on-time execution.</p>
+                        <p>Our team serves homeowners and businesses with careful work, clear updates, and dependable schedules.</p>
                     </div>
                 </div>
             </div>
@@ -483,7 +611,7 @@
                     <div class="kapex-testimonials__header text-center">
                         <span class="kapex-testimonials__eyebrow">Client Reviews</span>
                         <h2 id="kapex-testimonials-heading">From Our Clients</h2>
-                        <p>Trusted by Calgary homeowners for clear communication, premium workmanship, and dependable project delivery.</p>
+                        <p>Calgary clients trust us for clear updates, careful work, and projects that stay on track.</p>
                     </div>
                 </div>
             </div>
@@ -534,8 +662,8 @@
             <div class="row align-items-center">
                 <div class="col-lg-8 col-md-7">
                     <div class="contact_text">
-                        <h3>Are you looking for a
-                            Construction Expert?</h3>
+                        <h3>Need help with your next
+                            construction project?</h3>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-5">
